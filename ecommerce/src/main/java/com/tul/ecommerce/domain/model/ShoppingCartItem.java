@@ -1,6 +1,5 @@
 package com.tul.ecommerce.domain.model;
 
-import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

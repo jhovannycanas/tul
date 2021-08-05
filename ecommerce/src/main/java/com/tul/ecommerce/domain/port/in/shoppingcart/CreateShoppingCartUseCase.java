@@ -11,9 +11,6 @@ public interface CreateShoppingCartUseCase {
 
     ShoppingCart createShoppingCart(List<CreateShoppingCartCommand> createShoppingCartCommand);
 
-
-
-
     @Value
     class CreateShoppingCartCommand {
         @NotNull int quantity;

@@ -7,6 +7,6 @@ import java.util.UUID;
 @Data
 public class ShopingCartRequest {
 
-    private int quiantity;
+    private int quantity;
     private UUID product;
 }
