@@ -5,6 +5,7 @@ import com.tul.ecommerce.domain.model.Product;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 public interface CreateProductUseCase {
@@ -15,8 +16,8 @@ public interface CreateProductUseCase {
     @EqualsAndHashCode(callSuper = false)
     class CreateProductCommand extends SelfValidating<CreateProductCommand> {
         @NotNull private Double price;
-        @NotNull private String name;
-        @NotNull final String description;
+        @NotNull @NotEmpty private String name;
+        @NotNull @NotEmpty final String description;
         @NotNull final String sku;
         @NotNull private boolean isDiscount;
 
